@@ -10,7 +10,7 @@ var integers = [13, 25, 6, 3, 11, 2, 18, 7, 21, 1, 29, 20, 12, 8];
 var updated = integers.sort(function(first, second) {
   return second - first;
 }).filter(function(over19) {
-    return over19 > 19;
+    return over19 < 19;
   }).map(function(multiplyBy) {
      return multiplyBy * 1.5 - 1;
     }).reduce(function(prev, curr) {
